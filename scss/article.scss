@@ -1,0 +1,52 @@
+article {
+    background: #ffffff;
+    min-height: 100px;
+    max-width: 100%;
+  
+  .media {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .media-text {
+    margin: 15px;
+    padding-left: 120px;
+  
+    p {
+      max-width: 55%;
+      color: #86878B;
+    }
+  }
+  
+  .media-images {
+    padding-top: 30px;
+    padding-right: 150px;
+  }
+  
+  .icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 50px;
+  }
+
+  .icon:hover {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      transition: 0.2s;
+  }
+  
+  }
+
+
+  @media (max-width: 768px) {
+    article {
+      display: none;
+    }
+
+    .icon {
+      display: flex;
+    }
+
+  }
+  

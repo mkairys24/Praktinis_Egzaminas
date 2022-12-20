@@ -1,0 +1,139 @@
+nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 80px;
+    width: 100%;
+
+    #burger {
+        display: none;
+        color: white;
+    }
+  
+    .logo {
+      height: 60px;
+      width: 100px;
+    }
+  
+    img {
+      height: 50px;
+      width: 100px;
+    }
+  
+    .links a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      flex: right;
+    }
+
+    .links a:hover {
+      color: #E27866;
+
+    }
+  
+    .menu a:hover {
+      color: gray;
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    nav .links {
+        display: none;
+        position: absolute;
+        top:60px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background: black;
+        width: 100%;
+        padding-bottom: 20px;
+        transform: translateY(-120%);
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    nav .links a {
+      color: white;
+    }
+
+    nav .links a:hover {
+      background: #E27866;
+      color: white;
+      width: 200px;
+      text-align: center;
+      border-radius: 50px;
+      transition: 0.2s;
+    }
+
+
+
+    nav #burger {
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* Animacijoms */
+    #burger.rotate {
+        transform: rotate(-90deg);
+    }
+
+    .links.open {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 320px) {
+  nav .links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: black;
+    width: 100%;
+    padding-bottom: 20px;
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+nav .links a {
+  color: white;
+}
+
+nav .links a:hover {
+  background: #E27866;
+  color: white;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+nav #burger {
+    display: block;
+    transition: 0.3s;
+}
+
+/* Animacijoms */
+#burger.rotate {
+    transform: rotate(-90deg);
+}
+
+.links.open {
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
